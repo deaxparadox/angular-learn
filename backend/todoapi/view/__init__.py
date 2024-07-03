@@ -1,1 +1,1 @@
-from .function_view import root_view
+from .function_view import root_view, task_view

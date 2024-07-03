@@ -1,0 +1,31 @@
+[
+    {
+        "model": "todo.todotitlemodel",
+        "pk": 1,
+        "fields": {
+            "created": "2024-06-27T11:32:59.176Z",
+            "updated": "2024-06-27T11:32:59.176Z",
+            "title": "Jun"
+        }
+    },
+    {
+        "model": "todo.todotaskmodel",
+        "pk": 1,
+        "fields": {
+            "created": "2024-06-27T10:47:47.033Z",
+            "updated": "2024-06-27T10:47:47.033Z",
+            "task": "Complete DSA",
+            "title": null
+        }
+    },
+    {
+        "model": "todo.todotaskmodel",
+        "pk": 3,
+        "fields": {
+            "created": "2024-06-29T12:54:49.787Z",
+            "updated": "2024-06-29T12:54:49.787Z",
+            "task": "No title task",
+            "title": null
+        }
+    }
+]

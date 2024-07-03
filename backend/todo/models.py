@@ -17,7 +17,7 @@ class TodoTitleModel(TodoTimeModel):
     
     
     def __repr__(self):
-        return "<TodoTaskModel: {}>".format(self.title)
+        return "<TodoTitleModel: {}>".format(self.title)
     
     def __str__(self):
         return f"{self.title}"
@@ -57,9 +57,11 @@ class TodoTaskModel(TodoTimeModel):
     objects = TodoTaskDefaultManager()
     
     task = models.CharField(max_length=256)
+    
+    # SET_NULL is required for blank=True and null=True
     title = models.ForeignKey(
         TodoTitleModel, 
-        on_delete=models.CASCADE, 
+        on_delete=models.SET_NULL, 
         related_name="task",
         blank=True,
         null=True
